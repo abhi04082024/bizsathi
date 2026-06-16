@@ -1,0 +1,5 @@
+// Add to app/Http/Kernel.php in $middleware array:
+\App\Http\Middleware\SetLanguage::class,
+
+// Add to $routeMiddleware:
+'language' => \App\Http\Middleware\SetLanguage::class,
